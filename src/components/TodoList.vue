@@ -4,7 +4,7 @@
     <input type="text" v-model="title" @keydown.enter="addTodo" />
     <button v-if="active < all" @click="clear">清理</button>
     <ul v-if="todos.length">
-      <li v-for="todo in todos">
+      <li v-for="todo in todos" :key="todo.index">
         <input type="checkbox" v-model="todo.done" />
         <span :class="{ done: todo.done }"> {{ todo.title }}</span>
       </li>
@@ -45,9 +45,9 @@ let allDone = computed({
 <script setup>
 import { ref, computed } from "vue";
 
-import {useMouse} from '../utils/mouse'
+import { useMouse } from '../utils/mouse'
 
-let {x,y} = useMouse()
+let { x, y } = useMouse()
 let count = ref(1)
 function add() {
   count.value++
