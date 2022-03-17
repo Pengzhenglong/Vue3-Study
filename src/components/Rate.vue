@@ -1,8 +1,6 @@
 
 <template>
-  <div>
-    {{ rate }}
-  </div>
+  <div>rate {{ rate }}</div>
 </template>
 
 <script setup>
