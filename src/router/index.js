@@ -7,6 +7,7 @@ import Home from '../pages/home.vue'
 import About from '../pages/about.vue'
 import Rate from '../pages/rate.vue'
 import animation from '../components/animation.vue'
+import transition from '../components/transition.vue'
 const routes = [
   {
     path: '/',
@@ -27,6 +28,11 @@ const routes = [
     path: '/animation',
     name: 'animation',
     component: animation
+  },
+  {
+    path: '/transition',
+    name: 'transition',
+    component: transition
   }
 ]
 
