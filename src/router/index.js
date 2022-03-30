@@ -8,6 +8,7 @@ import About from '../pages/about.vue'
 import Rate from '../pages/rate.vue'
 import animation from '../components/animation.vue'
 import transition from '../components/transition.vue'
+import Vuex from '../components/Vuex.vue'
 const routes = [
   {
     path: '/',
@@ -33,6 +34,11 @@ const routes = [
     path: '/transition',
     name: 'transition',
     component: transition
+  },
+  {
+    path: '/vuex',
+    name: 'vuex',
+    component: Vuex
   }
 ]
 
